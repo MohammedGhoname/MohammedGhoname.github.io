@@ -1,0 +1,43 @@
+.notification-container
+{
+    position: relative;    
+    height: 25px;
+    margin-right: 10px;
+
+}
+#notification-img
+{
+    color: darkgray;
+    width: 18px;
+    height: 18px;
+    margin: 0px 10px;           
+}
+#notification-img:hover
+{
+    color: gray;
+}
+
+.notification-container::after,.notification-container::before
+{
+    content: '';
+    border: 1px red solid;
+    border-radius: 50%;    
+    display: block;
+    position: absolute;
+}
+
+.notification-container::after
+{
+    top:0px;
+    right: 5px;
+    height: 6px;
+    width: 6px;
+}
+.notification-container::before
+{
+    top:2px;
+    right: 7px;
+    height: 2px;
+    width: 2px;
+    background-color: red;
+}
